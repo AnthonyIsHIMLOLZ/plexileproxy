@@ -1,207 +1,65 @@
+
 <!DOCTYPE html>
-<html>
-<head>
-  <title id="static-title">PLEXILE ARCADE | Proxy</title>
-  <link rel="icon" type="image/png" href="https://cdn.glitch.global/2b25e860-636a-4eab-b48e-c6ae1aa92d6b/0ab56e19-2879-494d-8a3f-f79afb755ec1.image-fotor-bg-remover-20240127224610.png?v=1706417182506">
-  <meta name="googlebot" content="index, follow, snippet" />
-  <script src="https://cdn.jsdelivr.net/npm/libcurl.js@latest/libcurl_full.js" defer></script>
-  <style>
- body {
-            background: url(https://cdn.glitch.global/595c0b59-ffda-42dc-be07-bf0564511e92/6fa06a64-56e3-41f8-9777-9bcdf149b03c.image.png?v=1697314046228);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 85vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            font-size: 2em;
-            margin-bottom: -3px;
-        }
-        .search-container {
-            background: #27292e;
-            display: flex;
-            flex-direction: row;
-            border: 2px solid #b03232;
-            border-radius: 100px;
-            padding: 1px;
-            height: 45px;
-            width: 580px; 
-            align-items: center; 
-            margin-top: 0px;
-            transition: width 0.5s ease; 
-        }
-        .search-container:hover,
-        .search-container:focus {
-            width: 630px;
-        }
-        .search-container input {
-            background: #27292e;
-            border: none;
-            width: 100%;
-            padding: 10px;
-            outline: none;
-            border-radius: 25px;
-            font-size: 15px;
-            font-weight: bold;
-            text-align: center; 
-        }
-        .search-container button {
-            border: none;
-            background: transparent;
-            cursor: pointer;
-        }
-        img {
-            margin-top: 0px; 
-        }
-  </style>
-    
-  
-  <br>
-  <br>
-  <br>
-  
-  <img src="https://cdn.glitch.global/2b25e860-636a-4eab-b48e-c6ae1aa92d6b/IOojLd_43FOS6OoUQ1Lal-transformed.png?v=1706417073321">
-  <form id="uv-form" class="search-container">
-    <input
-      id="uv-search-engine"
-      value="https://www.google.com/search?q=%s"
-      type="hidden"
-    />
-    <input id="uv-address" type="text" placeholder="Enter URL & Search The Web Freely..." />
-  </form>
-  <div class="desc left-margin">
-    <p id="uv-error"></p>
-    <pre id="uv-error-code"></pre>
-  </div>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-</body>
-</html>
-
-
-  <script src="uv/uv.bundle.js" defer></script>
-    <script src="uv/uv.config.js" defer></script>
-    <script src="register-sw.js" defer></script>
-    <script src="search.js" defer></script>
-    <script src="error.js" defer></script>
-    <script src="proxy.js" defer></script>
-</head>
-<body>
-
-
-
-
-
-
-
-  <div class="snow-container"></div>
-  <style>    
-  .snowball {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background-color: #b03232; /* Default color for snowballs */
-  border-radius: 50%;
-  pointer-events: none; /* Prevent interaction with snowballs */
-  z-index: -1; /* Ensure snowballs are behind other content */
-  opacity: 0.6; /* Default opacity */
-  animation: snowdrift 8s infinite alternate; /* Faster animation */
-}
-
-.transparent {
-  opacity: 0.4; /* Adjusted opacity for most snowballs */
-}
-
-.light {
-  background-color: #f5aaaa; /* Lighter color for some snowballs */
-}
-
-.small {
-  width: 5px;
-  height: 5px;
-}
-
-@keyframes snowdrift {
-  0% {
-    transform: translate(-4px, -4px);
-  }
-  100% {
-    transform: translate(4px, 4px);
-  }
-}
-  </style>
-  <script>
-  document.addEventListener("DOMContentLoaded", function() {
-  const numSnowballs = 70; // Reduce the number of snowballs
-  const body = document.body;
-  const padding = 10; // Adjust this value as needed to control the spread around the edges
-
-  for (let i = 0; i < numSnowballs; i++) {
-    const snowball = document.createElement("div");
-    snowball.classList.add("snowball");
-
-    // Randomize position within the visible viewport with padding to avoid edges
-    const x = Math.random() * (window.innerWidth - 2 * padding) + padding;
-    const y = Math.random() * (window.innerHeight + 0); // Add extra to ensure visibility at the bottom
-    snowball.style.left = `${x}px`;
-    snowball.style.top = `${y}px`;
-
-    // Randomize size and opacity
-    const size = Math.random() * 10 + 5; // Random size between 5px and 15px
-    snowball.style.width = `${size}px`;
-    snowball.style.height = `${size}px`;
-
-    // Apply transparent class to most snowballs
-    if (Math.random() < 0.8) {
-      snowball.classList.add("transparent");
-    }
-
-    // Add lighter class to some snowballs
-    if (Math.random() < 0.3) {
-      snowball.classList.add("light");
-    }
-
-    // Add smaller class to some snowballs
-    if (Math.random() < 0.5) {
-      snowball.classList.add("small");
-    }
-
-    body.appendChild(snowball); // Append snowball to body
-  }
-});
-  </script>
-
-
-
-
+<html id="html">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sys Error</title>
+    <meta name="googlebot" content="noindex, nofollow, nosnippet" />
+    <base href="/" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="index.css" />
     <style>
+      .logo-wrapper {
+        margin-left: 20px;
+      }
 
-        ::-webkit-scrollbar {
-  width: 12px;
-  border-radius: 13px;
-}
+      .desc {
+        margin-left: 20px;
+      }
 
-::-webkit-scrollbar-track {
-  background: #16181C;
-  border-radius: 0px;
-}
-::-webkit-scrollbar-thumb {
-  background: #16181C;
-  border-radius: 15px;
-  height: 2px;
-}
-    </style>
-  
-   </style>
+      #uv-error {
+        color: red;
+      }
 
-    <style type="text/css">
-      body {
-        cursor: url("https://cdn.glitch.global/5974de2d-be05-4647-b3ac-08c6e71752fc/Removal-791.png?v=1707616156693"),
-          auto;
+      #uv-error-code {
+        font-family: monospace;
+      }
+
+      #uv-register-sw {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+      }
+
+      footer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px;
+      }
+
+      footer a {
+        margin-left: auto;
       }
     </style>
+  </head>
 
- 
-
+  <body style="background-size: cover; background-size: 100vmax 100vmax;">
+    <div class="logo-wrapper">
+      <center> <h1 style="text-align: center;">Proxy | Error</h1> </center>
+    </div>
+    <div class="desc">
+      <p style="font-size: 22px;"> The server could not route your request.</p>
+      <p id="uv-error"></p>
+      <code id="uv-error-code"></code>
+      <button  id="uv-register-sw" value="Register service worker">
+        Register ServiceWorker
+      </button> <br> <br>
+      <p>If this error persists, you can get suport <a href="https://discord.gg/p9h3dTHAMA" style="color:red; font-weight: bold;text-decoration: none; bottom:0;">HERE</a></p>
+    </div>
+    <script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+    <script src="register-sw.js"></script>
+    <script src="error.js" defer></script>
